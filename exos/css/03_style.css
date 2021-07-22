@@ -11,9 +11,20 @@ body{
 }
 
 h1{
+    /* taille de typo, en px en unités absolues */
+    font-size: 50px;
     color: whitesmoke;
 }
 
+h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 20px;
+    text-transform: lowercase;
+}
 h1,h2,h3{
         text-align: center;
         color: tomato;

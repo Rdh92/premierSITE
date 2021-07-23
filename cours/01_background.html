@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 background</title>
+
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /* une image de fond, répétée ou non, sa postition et sa taille  */
+            /* background-image: url ('../img/logo.png');
+            background-repeat : repeat-x ; 
+            background-position: center;  */
+            
+            /* background est la propriété raccourcis qui accepte plusieurs valeurs  */
+            background: url('../img/concrete-texture.png');
+            }
+
+        main{
+            /* margin auto ou 0 auto va centrer horizontalement l'élément dans son parent  */
+            margin:auto;
+
+            /* width largeur de l'élément  */
+            width: 1050px;
+
+            /* padding marge intérieure  */
+            padding: 50px;
+
+            /* bordure à gauche taille, style, couleur  */
+            border-left: 50px solid green;
+
+            background: linear-gradient(rgb(243,240,240) , rgb(194,223,241));
+            
+        }
+
+        h1{
+            width: 1000px;
+            background-color: limegreen;
+            text-align: center;
+            color:yellow;
+            letter-spacing: 2px;
+        }
+        
+        h2{
+            width: 800px;
+            background-color:turquoise
+        }
+
+        p{ 
+            background-color:lightsalmon
+
+        }
+
+        a{
+            background-color:yellowgreen;
+            color:turquoise;
+            
+            /* border propriété raccourcie  */
+            border: 1px solid black;
+        }
+
+        mark{
+            background-color:yellow;
+            color: green;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <!-- les balises inline: span, strong, em, a href, img , code, mark ...  -->
+        <h1>Background <mark>image</mark></h1>
+        <h2>et un titre de Niveau 2</h2>
+        <a href="https://www.leparisien.fr/" title="Le Parisien">Le Parisien</a>
+        <br><br><br><br><br><br><br><br><br><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur illo praesentium, rerum ex perspiciatis totam voluptates omnis soluta dignissimos dicta aliquam qui ratione in minima magni inventore delectus cupiditate quisquam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis inventore fugiat delectus eius obcaecati nam. Distinctio praesentium nisi nesciunt adipisci, voluptates explicabo repellendus magni voluptatem, voluptatum, itaque doloribus nam aliquam?</p>
+    </main>
+    
+</body>
+</html>

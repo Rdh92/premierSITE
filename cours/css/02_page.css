@@ -1,0 +1,32 @@
+body{
+    background-image:url('../../img/concrete-texture.png');
+}
+
+header{
+    background-color: olive;
+}
+
+nav{
+    background-color: cornflowerblue;
+}
+
+main{
+    background-color: cornsilk;
+    width: 1200px;
+}
+
+footer{
+    background-color: white;
+}
+
+h2{
+    background-color: lightblue;
+}
+
+article{
+    background-color: lightcoral;
+}
+
+aside{
+    background-color: lightgray;
+}

@@ -46,3 +46,25 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* fin reset Eric Meyer  */
+
+body{
+    background-color: lightgray;
+}
+
+h1{
+    background-color: pink;
+}
+
+h2{
+    background-color: red;
+}
+
+h3{
+    background-color: olive;
+}
+
+p{
+    background-color: #fff;
+}

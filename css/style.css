@@ -1,63 +1,107 @@
 /* les styles pour le premierSITE Redha Talamine chantier SUresnes 2021-2022  */
 
 
+/* Les styles pour le premierSITE */
+
 @charset "UTF-8";
 
-/* un reset simple  */
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* reset simple  
+sinon on peut utiliser le css d'Eric Meyer qui se trouve à cette 
+adresse: https://meyerweb.com/eric/tools/css/reset/
 */
 
-*{
+/* l'étoile signifie tout all */
+* {
     box-sizing: border-box;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-/* fin du reset simple  */
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 
@@ -223,18 +267,41 @@ nav a:hover{
 /* les zones principales  */
 
 main{
-    width: 1000px;
+    width: 1100px;
     margin: auto;
     /* une couleur en rgba : red green blue et avec un canal "alpha" on joue sur la transparence de la couleur rgb  */
     background-color: rgba(178, 178, 178, 0.178);
 
 }
 
+
+
+
 aside{
     height: 250px;
     width: 30%;
     float: left;
     background-color: #a6d6c3;
+}
+
+#accueil{
+    height: 70%;
+    float: left;
+}
+
+section{
+    margin-top: 50px;
+    padding: 20px;
+}
+
+footer{
+    height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2980b9;
+
+    text-align: center;
+    color: #fff;
 }
 
 /* la classe clear pour rétablir le flux  */

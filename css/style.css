@@ -80,7 +80,7 @@ body{
 
 h1{
     /* typo Google  */
-    font-family: 'Anton'; sans-serif
+    font-family: 'Anton', sans-serif;
     /* taille de typo */
     font-size: 40px;
     /* espacement entre les lettres  */
@@ -101,6 +101,7 @@ h2{
 
 /* taille de l'icône dans les h2  */
 /* i enfant de h2; l'icône sera 150% plus grande que la taille d'origine  */
+
 h2 i{
     font-size: 150%;
 }
@@ -141,18 +142,21 @@ header{
 
 /* la propriété float sert à casser le flux du html  */
 #logo{
+    /* 1 la boîte  */
     width: 25%;
     float: left;
-    /* marge intérieure de l'élément padding = rembourrage  */
+    /* 2 marge intérieure de l'élément padding = rembourrage  */
     padding: 15px;
-    /* l'aspect de la boite  */
+    /* 3 l'aspect de la boite  */
     background-color: #719bc5;
+    /* 4 texte  */
     text-align: center;
 }
 
 #slogan{
     width: 50%;
     float: left;
+    padding-top: 50px;
     background-color: #719bc5;
 }
 
@@ -162,7 +166,8 @@ header{
     background-color: #719bc5;
 }
 
-#social i{
+    
+#social i{ /* ici on cible un élément i dont le parent à l'id "social"  */
     /* je change la nature de l'élément i qui est de type inline, en un élément de type block  */
     display: block;
     padding: 15px 30px 0 0 ;
@@ -174,6 +179,64 @@ header a{
     text-decoration: none;
     color: #10828c;
 }
+
+/* fin header  */
+
+/* la nav, la navigation  */
+
+nav{
+    height: 70px;
+    padding: 15px;
+
+    background-color: #2980b9;
+    border-bottom: 8px solid #6acafc;
+
+    text-align: center;
+
+}
+
+nav a{
+    margin: 10px;
+    padding: 2px 10px;
+    background-color: #6acafc;
+    border: 2px solid #fff;
+    /* arrondi les angles des bordures  */
+    border-radius: 10px 0;
+
+    font-family: 'Oswald', sans-serif;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 16px;
+    /* transition sur la nav a avec le :hover  */
+    transition: 0.5s;
+}
+
+nav a:hover{
+    /* :hover une pseudo class, un effet de survol du curseur  */
+    background-color: #a6d6c3;
+    color: #fff;
+
+}
+
+/* fin nav  */
+
+/* les zones principales  */
+
+main{
+    width: 1000px;
+    margin: auto;
+    /* une couleur en rgba : red green blue et avec un canal "alpha" on joue sur la transparence de la couleur rgb  */
+    background-color: rgba(178, 178, 178, 0.178);
+
+}
+
+aside{
+    height: 250px;
+    width: 30%;
+    float: left;
+    background-color: #a6d6c3;
+}
+
 /* la classe clear pour rétablir le flux  */
 .clear{
     clear: both;

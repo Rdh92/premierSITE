@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
+    <head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, intial-scape=1.0">
@@ -13,7 +13,7 @@
 		<!-- l'auteur de la page-->
 		<meta name="author" content="Redha Talamine">
 
-		<title>Mon premier site en HTML 5 et en CSS 3 - Accueil</title>
+		<title>Une image en fond CSS - Image</title>
 
 		<!-- les Google Fonts anton,lemonada et oswald  -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,48 +29,39 @@
 		<script src="https://kit.fontawesome.com/2e3f0d4b48.js" crossorigin="anonymous"></script>
 		
 	</head>
-	<body>
-		
-		<!-- bien indenter son code, c'est s'assurer de la bonne imbrication des balises et augmenter la lisibilité du code-->
-		<!-- en-tete de la page-->
-		
-		<header>
-			<!-- en-tete de la page-->
-		<header>			
-			<div id="logo">
-				<!-- le bouton et le lien vers l'ancre #logo -->
-				<a href="#logo">
-					<button type="button"><i class="fas fa-arrow-circle-up"></i></button>
-				</a>
-				<img src="img/logo.png" alt="logo html 5 et css 3">
-			</div>
+<body>
+    <header>			
+        <div id="logo">
+            <!-- le bouton et le lien vers l'ancre #logo -->
+            <a href="#logo">
+                <button type="button"><i class="fas fa-arrow-circle-up"></i></button>
+            </a>
+            <img src="img/logo.png" alt="logo html 5 et css 3">
+        </div>
 
-			<div id="slogan">
-				<a href="index.html">
-					<h1>Mon premier site en HTML 5 et CSS 3</h1>
-				</a>
-			</div>
-			
-			<div id="social">
-				<a href="https://www.instagram.com/lagencesuresnes/" target="_blank"><i class="fab fa-instagram"></i></a>
-				<a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
-			</div>
-			
-			<div class="clear"></div>
-		</header>
-		<!-- fin header-->
-		</header>
-		<!-- fin header-->
+        <div id="slogan">
+            <a href="index.html">
+                <h1>Mon premier site en HTML 5 et CSS 3</h1>
+            </a>
+        </div>
+        
+        <div id="social">
+            <a href="https://www.instagram.com/lagencesuresnes/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        
+        <div class="clear"></div>
+    </header>
+    <!-- fin header-->
 
-		
-		<!--navigation principale-->
+    <!--navigation principale-->
 		<nav>
 			<div>
 				<!-- zone de menu avec des liens simples pour faire notre menu -->
-				<a href="index.html" title="HTML 5 CSS 3 - Accueil" class="active">Accueil</a>
+				<a href="index.html" title="HTML 5 CSS 3 - Accueil" >Accueil</a>
 				<a href="texte.html" title="HTML 5 CSS 3 - Texte">Texte</a>
 				<a href="selecteur.html" title="HTML 5 CSS 3 - Sélecteur">Sélecteur</a>
-				<a href="image.html" title="HTML 5 CSS 3 - Image ">Image</a>
+				<a href="image.html" title="HTML 5 CSS 3 - Image " class="active">Image</a>
 				<a href="position.html" title="HTML 5 CSS 3 - Position ">Position</a>
 				<a href="zoning.html" title="HTML 5 CSS 3 - Zoning ">Zoning</a>
 				<a href="tableaux.html" title="HTML 5 CSS 3 - Tableau ">Tableau</a>
@@ -83,55 +74,31 @@
 			</div>
 		</nav>
 		<!--fin nav-->
+        <main>
+            <section>
+                <h2>Les images - <i class="fas fa-image"></i></h2>
+            </section>
 
-		
+            <section class="img-fond">
+                <h3>Une image de fond en CSS - <i class="fas fa-comment-alt"></i></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui impedit unde laboriosam voluptates ducimus ratione necessitatibus aspernatur, consequuntur, nostrum quisquam cum. Voluptatum libero nesciunt harum nihil nisi vero animi natus.
+                Natus voluptates quaerat quam, laudantium ratione nam quibusdam, quasi quo, sapiente est nulla at ad maxime tempora dolor repellendus iure labore nisi amet illum id nihil quod minima? Deleniti, cumque!
+                Debitis ad suscipit ab non ut reprehenderit, sint necessitatibus hic quasi quia incidunt doloremque, quisquam corrupti architecto cum deleniti nihil atque voluptatum vitae at! Quibusdam autem cupiditate minus ducimus temporibus!</p>
+            </section>
 
-		<!-- contenu principal-->
-		<main>
-			<!-- aside = la partie latérale de la section princiaple -->
-			<aside>
-				<h2>La page d'accueil - <i class="fas fa-bicycle"></i></h2>
-				<p>Ici, la balise <code>&lt;aside&gt;</code> mais il n'y a que ce paragraphe</p>
-				<p> Et cette phrase dans laquelle je vous donne le raccourci pour ouvrir un fichier dans un logiciel <kbd>CTRL + O</kbd>.</p>
-			</aside>
-
-			<section id="accueil">
-				<!-- div : zone supplémentaire de contenu -->
-				<div>
-					<h2>Ici un titre de niveau 2 dans une div</h2>
-					<p>ici le contenu principal, un p dans la balise <code>&lt;section&gt; </code></p>
-
-					<h3>Ici un titre de niveau 3</h3>
-					<h4>Ici un titre de niveau 4 </h4>
-					<h5>Ici un titre de niveau <span>niveau</span> 5</h5>
-					<h6>Ici un titre de niveau 6</h6>
-
-				</div>
-
-					<!--span : zone supplémentaire de contenu, span est une balise inline-->
-				
-					<h2>Ici un titre de <span> niveau 2 dans span </span> </h2>
-				
-				<article>
-					<h2>Ici un titre de niveau 2 dans un article</h2>
-					<a href="#">Récap points de CSS</a> - <a href="texte.html">Récap texte HTML </a>
-
-				</article>
-
-				
+			<!-- section 3  -->
+			<section>
+				<h3>Image dans le html</h3>
+				<img src="img/toureiffel.jpg" alt="la tour eiffel">
+				<title>Une belle image de la Tour Eiffel</title>
 			</section>
-			<div class="clear"></div>
-		</main>
-		<!--fin main-->
+        </main>
 
-		<footer>
+        <footer>
             <!-- pour les caratères spéciaux nous avons besoin de les coder cf.https://dev.w3c.org/html5/html-author/charref  -->
             <p>&copy; L'agence Suresnes 2021</p>
-
+    
         </footer>
-	
-
-
-
-	</body>
+    
+</body>
 </html>

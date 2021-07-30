@@ -353,8 +353,8 @@ button{
 
 .selection p:nth-of-type(4), :nth-of-type(6){
     /* le énième élément du type désigné  */
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 /* le symbôle * étoile signifie tout "all" et nous ciblons tous les derniers enfants des éléments qui sont dans la classe selection  */
@@ -484,6 +484,7 @@ img[src="img/toureiffel.jpg"] {
 /* la page des listes  */
 
 ul.fruit{
+    margin-top: 20px;
     /* pour voir tous les types de puces faites CTRL + ESPACE  */
     list-style: none;
 }
@@ -505,3 +506,62 @@ li .far:hover{
     color: blue;
 }
 
+ol.fruit-2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-type: upper-roman;
+}
+
+.imbriquee, .imbriquee ul{
+    padding-left: 40px;
+    background-color: #fff;
+}
+
+.imbriquee{
+    cursor: pointer;
+}
+
+.imbriquee ul{
+    display: none;
+}
+
+.affiche:hover ul{
+    display: block;
+}
+
+/* ici nous ciblons les li (au survol de la souris) qui sont dans une ul imbriquée dans des li eux mêmes enfants d'un élément qui a la classe "imbriquee"  */
+.imbriquee li ul li:hover{
+    font-size: 150%;
+    background-color: #6acafc;
+    box-shadow: 5px 10px 10px grey;
+    display: inline;
+    transition-duration: 0.5s;
+}
+
+/* fin liste  */
+
+/* page des liens  */
+/* les ancres en haut de pages  */
+.ancre{
+    text-align: center;
+    padding: 100px;
+}
+
+.ancre a{
+    margin: 8px;
+    padding: 5px 10px;
+    
+    background-color: salmon;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 3px black;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+.ancre a:hover{
+    box-shadow: none;
+    text-shadow: 1px 5px 5px rgb(red, green, blue));
+    transition-duration: 0.5s;
+}

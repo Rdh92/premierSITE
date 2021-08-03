@@ -354,7 +354,7 @@ button{
 .selection p:nth-of-type(4), :nth-of-type(6){
     /* le énième élément du type désigné  */
     background:none;
-    color:#fff
+    color:black;
 }
 
 /* le symbôle * étoile signifie tout "all" et nous ciblons tous les derniers enfants des éléments qui sont dans la classe selection  */
@@ -646,4 +646,23 @@ ol.fruit-2{
 
 #menu-deroulant ul{
     text-align: center;
+}
+
+/* la page formulaire  */
+
+form{
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+
+    background: #80bceb;
+    border-radius: 20px;
+}
+
+textarea{
+    resize: none;
+}
+
+label{
+    margin: 20px 10px;
 }

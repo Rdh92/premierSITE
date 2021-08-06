@@ -291,7 +291,7 @@ main{
 
 aside{
     height: 250px;
-    width: 30%;
+    width: 20%;
     float: left;
     background-color: #a6d6c3;
 }
@@ -732,4 +732,35 @@ iframe[allowfullscreen] {
 
     font-size: 120%;
     text-align: center;
+}
+
+/* page de zoning  */
+
+#zoning-1{
+    width: 800px;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+#zoning-1 header{
+    height: 70px;
+    text-align: center;
+}
+
+#zoning-1 aside{
+    height: 525px;
+    width: 20%;
+    float: left;
+    background: #A3DE83;
+}
+
+#zoning-1 section{
+    height: 525px;
+    width: 80%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+
+    background: #4dc40d;
 }

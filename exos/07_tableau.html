@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau 07</title>
+
+    <style>
+        body{
+            background-color: #fdf5e6;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main{
+            margin: auto;
+            width: 80%;
+            padding: 10px;
+            background-color:#fdf5e6;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+       
+        /* les styles pour le tableau avec la classe adresses  */
+
+        table.adresses, td{
+            width: 80%;
+            margin: auto;
+            padding: 10px;
+            border-collapse: collapse;
+        }
+
+        table.adresses, .adresses td{
+            border: black solid 1px;
+        }
+
+        .adresses caption{
+            height: 60px;
+            background-color: #add8e6;
+            color: white;
+            /* line height hauteur de ligne identique à la hauteur du parent, a pour effet de centrer verticalement */
+            line-height: 60px;
+            font-size: 1.5em;
+        }
+
+        .adresses thead{
+            background-color:blanchedalmond;
+            font-weight: bold;
+        }
+
+        .adresses td{
+            padding: 10px;
+        }
+
+        /* even=pair */
+        /* odd=impair */
+        .adresses tr:nth-child(odd):not(:only-child){
+            background-color: rgba(182, 224, 238, 0.993);
+        }
+
+        .adresses tr:nth-child(even){
+            background-color: rgba(29, 110, 138, 0.829);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Tableau HTML mes magasins préférés</h1>
+        <table class="adresses">
+            <caption>
+                Adresses//fournisseurs
+            </caption>
+            <thead>
+                <!-- tr table row, les rangées du tableau  -->
+                <tr>
+                    <!-- td table data, les données du tableau, les cellules, le nombre de cellules donne le nombre de colonnes du tableau -->
+                    
+                    <th>Cie</th>
+                    <th>Contact</th>
+                    <th>Pays</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- tr*4>td*4  -->
+                <tr>
+                    <!-- rowspan fait fusionner la cellule de cette rangée avec celle du dessous  -->
+                    <td>Le pain des amis</td>
+                    <td>Maria Duroc</td>
+                    <td>France</td>
+                </tr>
+
+                <tr>
+                    <td>Los vinos buenos</td>
+                    <td>José Santos</td>
+                    <td>Espagne</td>
+                </tr>
+
+                <tr>
+                    <td>Kangoroo and Cie</td>
+                    <td>Mike Mendel</td>
+                    <td>Australie</td>
+                </tr>
+
+                <tr>
+                    <td>Twinnings</td>
+                    <td>Helen Spike</td>
+                    <td>Royaume-uni</td>
+                </tr>
+
+                <tr>
+                    <td>Cycles Laurent</td>
+                    <td>Pierre Laurent</td>
+                    <td>France</td>
+                </tr>
+
+                <tr>
+                    <td>Santini</td>
+                    <td>Jacomo Santini</td>
+                    <td>Italie</td>
+                </tr>
+
+        </table>
+
+        <hr>
+
+        <h2>un autre tableau avec des balises th</h2>
+            <table class="adresses">
+                <caption>Tableau 2</caption>
+                <thead>
+                    <!-- tr table row, les rangées du tableau  -->
+                    <tr>
+                        <!-- td table data, les données du tableau, les cellules, le nombre de cellules donne le nombre de colonnes du tableau -->
+                        
+                        <th>IDENTIFIANT</th>
+                        <th>NOMS</th>
+                        <th>PRENOMS</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- tr*4>td*4  -->
+                    <tr>
+                        <!-- rowspan fait fusionner la cellule de cette rangée avec celle du dessous  -->
+                        <td>n°1</td>
+                        <td>Chirac</td>
+                        <td>Jacques</td>
+                    </tr>
+    
+                    <tr>
+                        <td>n°2</td>
+                        <td>Jospin</td>
+                        <td>Lionel</td>
+                    </tr>
+    
+                    <tr>
+                        <td>n°3</td>
+                        <td>Mouse</td>
+                        <td>Mickey</td>
+                    </tr>
+
+    </main>
+    
+</body>
+</html>

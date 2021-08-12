@@ -7,16 +7,119 @@
     <title>Display</title>
 
     <style>
+        body{
+            background-color: lightgrey;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        main{
+            width: 80%;
+            margin: auto;
+            padding: 10px;
+            background: lightyellow;
+        }
+
+        section{
+            margin-top: 30px;
+            padding: 10px;
+            border: 1px solid green;
+        }
+
+        p{
+            width: 80%;
+            margin: auto;
+        }
+
+        a{
+            background-color:peachpuff;
+            color:purple;
+        }
+
+        a:hover{
+            background-color: powderblue;
+        }
+
+        .rose{
+            background-color: pink;
+        }
+
+        .vert{
+            background-color: greenyellow;
+        }
+
+        
+        .display-none{
+            display: none;
+        }
+
+        .display-inline{
+            display: inline;
+        }
+
+        .display-block{
+            display: block;
+        }
+
+        a.display-block{
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .display-inline-block{
+            display: inline-block;
+        }
+
+        a.display-inline-block{
+            height: 100px;
+            width: 100px;
+            text-align: center;
+        }
+
 
     </style>
 </head>
 <body>
     <main>
-        <h1>Display</h1>
+        <h1>La propriété Display</h1>
+        <!-- section 1 -->
         <section class="rose">
-            <h2>1/ Comportement normal de chez normal !</h2>
+            <h2>1/Display, comportement normal de chez normal !</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis voluptate maxime asperiores odio, eaque similique assumenda id possimus ducimus optio libero ex excepturi consequuntur architecto exercitationem facere. Fugiat, eius quod?</p>
-            <p>Et là je vais aller sur le site du journal<a href=""> Le Monde</a>qui est un excellent journal du soir </p>
+            <p>Et là je vais aller sur le site du journal<a href=""> Le Monde </a>qui est un excellent journal du soir </p>
+        </section>
+
+        <!-- section 2; l'élément n'est pa affiché  -->
+        <section>
+            <h2>2/Display none</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis asperiores doloribus quidem at perferendis necessitatibus, rerum alias obcaecati dignissimos neque amet sint inventore eligendi impedit perspiciatis esse nemo iure.</p>
+            <p class="rose display-none">Coucou les amis, un paragraphe !! Je rajoute un lien vers <a href="https://www.psg.fr/"> site de mon choix </a>et après ce lien je rajoute encore du texte</p>
+        </section>
+
+        <!-- section 3; affiche un élément en ligne, aucune propriété de largeur ni de hauteur n'auront d'effets  -->
+        <section>
+            <h2>3 Display inline</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam aspernatur explicabo reiciendis ea eum dicta repellat quasi architecto adipisci veniam enim accusantium in quaerat sapiente unde cum, illum itaque doloribus.</p>
+
+            <p class="display-inline vert">Coucou les amis, un paragraphe !! Je rajoute un lien vers <a href="https://www.psg.fr/"> site de mon choix </a>et après ce lien je rajoute encore du texte</p>
+            <p class="rose">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore quia odio recusandae. Possimus facere neque consectetur nemo aut, adipisci vitae saepe ipsa quaerat corporis repellat? Repellendus voluptatem possimus quos quis!</p>
+        </section>
+
+
+        <!-- section 4; affiche un élément comme un block, il commence sur une nouvelle ligne et prend toute la largeur -->*
+        <section>
+            <h2>3 Display block</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam aspernatur explicabo reiciendis ea eum dicta repellat quasi architecto adipisci veniam enim accusantium in quaerat sapiente unde cum, illum itaque doloribus.</p>
+
+            <p class="">Coucou les amis, un paragraphe !! Je rajoute un lien vers <a href="https://www.psg.fr/" class="display-block"> site de mon choix </a>et après ce lien je rajoute encore du texte</p>
+        </section>
+
+        <!-- section 5; un élément est formaté comme un élément inline mais on peut lui donner des valeurs de hauteur et/ou de largeur  -->
+        <section>
+            <h2>5/ Display inline-block</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam aspernatur explicabo reiciendis ea eum dicta repellat quasi architecto adipisci veniam enim accusantium in quaerat sapiente unde cum, illum itaque doloribus.</p>
+
+            <p class="display-inline-block">Coucou les amis, un paragraphe !! Je rajoute un lien vers <a href="https://www.psg.fr/" class="display-inline-block"> site de mon choix </a>et après ce lien je rajoute encore du texte</p>
         </section>
     </main>
     

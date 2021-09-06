@@ -862,3 +862,114 @@ iframe[allowfullscreen] {
     text-align: center;
     font-size: 25px;
 }
+
+#zoning-8{
+    color: black;
+    background-color: #fff;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+p{
+    margin: 0 auto;
+}
+
+/* en tête avec les trois parties hautes  */
+#zoning-8 header{
+    height: 200px;
+    background-color: red;
+}
+
+#zoning-8 .haut-1{
+    background-color: #ff6347;
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+#zoning-8 .haut-2{
+    background-color: #008080;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#zoning-8 .haut-3{
+    background-color:#40e0d0;
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+/* navigation  */
+#zoning-8 nav{
+    height: 100px;
+    background-color: #add8e6;
+    border: 0;
+}
+
+#zoning-8 aside{
+    float: left;
+    width: 25%;
+    height : 500px;
+    background-color: #d8bfd8;
+
+}
+
+#zoning-8 section{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 75%;
+}
+
+/* zone principale  */
+
+#zoning-8 .zone-a{
+    background-color: #f5deb3;
+    float: left;
+    height: 200px;
+    width: 50%;
+}
+#zoning-8 .zone-b{
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: #f5f5f5;
+}
+
+#zoning-8 .diaporama{
+    height: 200px;
+    background-color: #a3de83;
+}
+#zoning-8 .zone-c{
+    float: left;
+    width: 25%;
+    height: 100px;
+    background-color: #32ff32;
+}
+#zoning-8 .zone-d{
+    float: left;
+    width: 25%;
+    height: 100px;
+    background-color: #e032ff;
+}
+#zoning-8 .zone-e{
+    float: left;
+    width: 25%;
+    height: 100px;
+    background-color: #ffa632;
+}
+#zoning-8 .zone-f{
+    float: left;
+    width: 25%;
+    height: 100px;
+    background-color: #ff3265;
+}
+
+#zoning-8 footer{
+    min-height: 100px;
+    background-color:#0b5269;
+    margin-top: 0;
+}

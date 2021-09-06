@@ -1084,5 +1084,6 @@ p{
 }
 
 .img-effets:hover li:not(:hover) img{
-    
+    /* on met en niveau de gris ce qui n'est pas survolé  */
+    filter: grayscale(1) blur(2px);
 }
